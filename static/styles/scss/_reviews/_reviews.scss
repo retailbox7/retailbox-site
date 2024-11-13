@@ -1,0 +1,12 @@
+.reviews {
+    margin-top: 32px;
+    &__title {
+        font-size: 64px;
+        font-weight: bold;
+    }
+    &__container {
+        margin-top: 16px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,17 @@
+.our-motto {
+    margin-top: 32px;
+    &__container {
+        
+    }
+    &__title {
+    }
+    &__subtitle {
+        
+    }
+    &__text {
+        &:first-child {
+            margin-top: 0;
+        }
+        margin-top: 16px;
+    }
+}

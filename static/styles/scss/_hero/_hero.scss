@@ -1,0 +1,22 @@
+.hero {
+    margin-top: 32px;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px;
+    }
+    &__left {
+        padding: 32px;
+    }
+    &__right {}
+    &__title {
+        font-size: 128px;
+        font-weight: 600;
+        & span {
+            font-weight: bold;
+        }
+    }
+    &__subtitle {
+        font-size: 36px;
+    }
+}

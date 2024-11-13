@@ -1,0 +1,35 @@
+.header {
+    margin-top: 32px;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__navigation {
+        display: grid;
+        align-items: center;
+        display: flex;
+        gap: 16px;
+    }
+    &__logo {}
+    &__ul {
+        display: flex;
+        gap: 16px;
+        font-size: 36px;
+        font-weight: normal;
+    }
+    &__li {
+        transition: transform 0.3s ease;
+        &:hover {
+            transform: scale(1.05);
+        }
+        & a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.logo-toggle {
+    fill: var(--dark);
+    transition: fill ease-in-out .3s;
+}

@@ -1,0 +1,17 @@
+.about-us {
+    margin-top: 32px;
+    &__container{
+        padding: 32px;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 64px;
+        text-align: center;
+    }
+
+    &__text {
+        margin-top: 16px;
+        font-size: 36px;
+    }
+}

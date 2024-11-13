@@ -1,0 +1,12 @@
+.why-choose-us {
+    &__title {
+        font-size: 64px;
+        font-weight: bold;
+    }
+    margin-top: 32px;
+    &__container {
+        margin-top: 16px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

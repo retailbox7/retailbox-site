@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetailBox</title>
+    <link rel="stylesheet" href="/static/styles/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles/css/main.css">
+    <link rel="icon" type="image/x-icon" href="./static/img/favicon.ico">
+</head>
+
+<body class="body hidden">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <svg width="274" height="64" viewBox="0 0 274 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="logo-toggle" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M23.1299 15.4075C18.8718 15.4075 15.4199 18.8566 15.4199 23.1111C15.4199 27.3659 18.8718 30.8149 23.1299 30.8149C27.3879 30.8149 30.8399 27.3659 30.8399 23.1111C30.8399 18.8566 27.3879 15.4075 23.1299 15.4075ZM19.2749 23.1111C19.2749 20.984 21.0008 19.2593 23.1299 19.2593C25.259 19.2593 26.9849 20.984 26.9849 23.1111C26.9849 25.2385 25.259 26.963 23.1299 26.963C21.0008 26.963 19.2749 25.2385 19.2749 23.1111Z"
+                            fill="#2B3343" />
+                        <path class="logo-toggle" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M20.7539 1.95888C21.188 1.92564 21.6754 1.92583 22.0729 1.92599H24.187C24.5844 1.92583 25.0719 1.92564 25.506 1.95888C26.019 1.99817 26.7301 2.09806 27.4926 2.44475C28.4566 2.88294 29.2815 3.57718 29.8775 4.45176C30.3491 5.1437 30.5685 5.82692 30.6946 6.32536C30.8012 6.7472 30.8838 7.22705 30.9511 7.61841L31.2241 9.19896L31.2294 9.20191C31.2965 9.23893 31.3632 9.27642 31.4297 9.31441L31.4347 9.31716L33.2406 8.6641C33.607 8.53148 34.0574 8.36838 34.4703 8.25344C34.9591 8.11741 35.6497 7.97123 36.4712 8.03167C37.5117 8.10817 38.5119 8.46443 39.3661 9.06273C40.0406 9.53521 40.4829 10.0849 40.7753 10.4992C41.0226 10.8493 41.2682 11.2604 41.4681 11.5947L42.4353 13.212C42.6469 13.5652 42.9048 13.996 43.1039 14.3969C43.3383 14.8687 43.6245 15.5514 43.7111 16.4102C43.8198 17.4917 43.6213 18.582 43.1379 19.5557C42.7539 20.329 42.245 20.8669 41.8592 21.226C41.5315 21.5309 41.1381 21.8433 40.8156 22.0993L39.5136 23.1111L40.8156 24.123C41.1381 24.3792 41.5315 24.6914 41.8592 24.9964C42.245 25.3554 42.7539 25.8934 43.1377 26.6666C43.6211 27.6404 43.8198 28.7306 43.7109 29.8122C43.6245 30.671 43.3381 31.3535 43.1037 31.8256C42.9046 32.2264 42.6467 32.6572 42.4353 33.0104L41.4677 34.628C41.268 34.9623 41.0224 35.3731 40.7753 35.7231C40.4827 36.1375 40.0406 36.6872 39.3659 37.1596C38.5119 37.758 37.5115 38.1143 36.4712 38.1908C35.6497 38.2513 34.9591 38.1049 34.4703 37.9689C34.0572 37.8539 33.6068 37.691 33.2404 37.5583L31.4345 36.9052L31.4297 36.9081C31.3632 36.9461 31.2965 36.9834 31.2294 37.0206L31.2241 37.0235L30.9511 38.6039C30.8838 38.9952 30.8012 39.4752 30.6946 39.897C30.5685 40.3954 30.3491 41.0787 29.8775 41.7707C29.2815 42.6453 28.4566 43.3396 27.4926 43.7777C26.7301 44.1244 26.019 44.2243 25.506 44.2636C25.0717 44.2967 24.5844 44.2965 24.187 44.2964H22.0729C21.6754 44.2965 21.188 44.2967 20.7539 44.2636C20.2408 44.2243 19.5298 44.1244 18.7672 43.7777C17.8033 43.3396 16.9783 42.6453 16.3823 41.7707C15.9107 41.0787 15.6913 40.3954 15.5653 39.897C15.4587 39.4752 15.3761 38.9952 15.3087 38.6039L15.0358 37.0235L15.0305 37.0206C14.9634 36.9834 14.8966 36.9461 14.8301 36.9079L14.8252 36.9052L13.0194 37.5583C12.6531 37.6908 12.2026 37.8539 11.7896 37.9689C11.3007 38.1049 10.6102 38.251 9.78867 38.1908C8.74829 38.1143 7.74801 37.758 6.89383 37.1596C6.2193 36.6872 5.77704 36.1375 5.48453 35.7231C5.23743 35.3731 4.99176 34.9622 4.792 34.6278L3.82455 33.0104C3.61309 32.6572 3.35519 32.2264 3.15608 31.8256C2.92166 31.3535 2.63531 30.671 2.54888 29.8122C2.44004 28.7306 2.63874 27.6404 3.12214 26.6666C3.50602 25.8934 4.01482 25.3554 4.40068 24.9964C4.72843 24.6914 5.12173 24.3792 5.44422 24.123L6.70472 23.1216V23.1009L5.44417 22.0993C5.12162 21.8433 4.72835 21.5309 4.4006 21.226C4.01474 20.8669 3.50594 20.329 3.12206 19.5557C2.63867 18.582 2.43996 17.4917 2.54878 16.4102C2.63521 15.5514 2.92158 14.8688 3.15598 14.3969C3.35509 13.996 3.61301 13.5652 3.82448 13.212L4.7919 11.5946C4.99166 11.2603 5.23732 10.8493 5.48443 10.4992C5.77694 10.0849 6.2192 9.53521 6.89373 9.06278C7.74791 8.46443 8.74818 8.10817 9.78857 8.03167C10.6101 7.97128 11.3006 8.11746 11.7895 8.25349C12.2025 8.36838 12.653 8.53148 13.0193 8.66415L14.8252 9.31721L14.8301 9.31441C14.8966 9.27647 14.9634 9.23893 15.0305 9.20191L15.0358 9.19896L15.3087 7.61847C15.3761 7.2271 15.4587 6.7472 15.5653 6.32536C15.6913 5.82692 15.9107 5.1437 16.3823 4.45176C16.9783 3.57718 17.8033 2.88294 18.7672 2.44475C19.5298 2.09806 20.2408 1.99817 20.7539 1.95888ZM27.1657 8.35142C27.0061 7.42707 26.9263 6.9649 26.6912 6.61976C26.4925 6.32826 26.2176 6.09684 25.8963 5.95076C25.5158 5.77786 25.0465 5.77786 24.1077 5.77786H22.1521C21.2135 5.77786 20.7439 5.77786 20.3636 5.95076C20.0423 6.09684 19.7675 6.32826 19.5687 6.61976C19.3335 6.9649 19.2537 7.42707 19.094 8.35142L18.7933 10.0931C18.686 10.7146 18.6324 11.0253 18.5187 11.2642C18.4071 11.4987 18.3159 11.6269 18.1307 11.8091C17.9422 11.9948 17.5933 12.1875 16.8955 12.5729C16.8441 12.6013 16.7929 12.6301 16.7419 12.6592C16.0745 13.0401 15.7408 13.2305 15.493 13.295C15.2496 13.3583 15.098 13.3714 14.8473 13.3505C14.5921 13.3292 14.3062 13.2259 13.7344 13.0191L11.7808 12.3127C10.9149 11.9995 10.4819 11.843 10.0715 11.8731C9.72472 11.8986 9.3913 12.0174 9.10657 12.2168C8.76959 12.4529 8.53336 12.8478 8.06095 13.6376L7.17551 15.1179C6.67676 15.9517 6.42742 16.3686 6.38441 16.7956C6.34817 17.1561 6.41441 17.5195 6.5755 17.8441C6.76639 18.2285 7.14683 18.5309 7.90773 19.1355L9.30493 20.2458C9.7903 20.6313 10.033 20.8243 10.1851 21.0309C10.3496 21.2546 10.4197 21.3997 10.4924 21.6675C10.5597 21.9152 10.5597 22.3138 10.5597 23.1111C10.5597 23.9085 10.5597 24.3071 10.4924 24.555C10.4197 24.8227 10.3496 24.968 10.1852 25.1913C10.033 25.3982 9.7903 25.591 9.30488 25.9767L7.90778 27.0869C7.14689 27.6916 6.76644 27.9938 6.5756 28.3784C6.41446 28.7029 6.34822 29.0663 6.38451 29.4268C6.42747 29.8538 6.67687 30.2706 7.17561 31.1045L8.061 32.5848C8.53346 33.3746 8.76964 33.7696 9.10662 34.0055C9.39135 34.2051 9.72477 34.3237 10.0716 34.3493C10.482 34.3794 10.915 34.2228 11.7808 33.9098L13.7344 33.2034C14.3062 32.9965 14.5921 32.8931 14.8473 32.8719C15.098 32.8511 15.2496 32.864 15.493 32.9274C15.7408 32.9919 16.0745 33.1824 16.7419 33.5632C16.7929 33.5923 16.8441 33.6211 16.8955 33.6494C17.5933 34.0348 17.9422 34.2276 18.1307 34.4132C18.3159 34.5954 18.4071 34.7237 18.5187 34.9583C18.6324 35.1971 18.686 35.5077 18.7933 36.1292L19.094 37.8709C19.2537 38.7953 19.3335 39.2575 19.5687 39.6027C19.7675 39.8941 20.0423 40.1255 20.3636 40.2715C20.7439 40.4445 21.2135 40.4445 22.1521 40.4445H24.1077C25.0465 40.4445 25.5158 40.4445 25.8963 40.2715C26.2176 40.1255 26.4925 39.8941 26.6912 39.6027C26.9263 39.2575 27.0061 38.7953 27.1657 37.8709L27.4666 36.1292C27.5738 35.5077 27.6275 35.1971 27.7411 34.9583C27.8527 34.7237 27.944 34.5954 28.1291 34.4132C28.3178 34.2276 28.6667 34.0348 29.3642 33.6494C29.4157 33.6211 29.467 33.5923 29.5178 33.5632C30.1853 33.1824 30.519 32.9919 30.7669 32.9274C31.0103 32.864 31.1618 32.8511 31.4126 32.8719C31.6677 32.8931 31.9536 32.9965 32.5253 33.2034L34.479 33.9098C35.3448 34.223 35.7779 34.3796 36.1883 34.3493C36.535 34.3237 36.8685 34.2051 37.1532 34.0055C37.4901 33.7696 37.7264 33.3746 38.1989 32.5848L39.0844 31.1045C39.583 30.2708 39.8324 29.8538 39.8754 29.4268C39.9116 29.0663 39.8453 28.7029 39.6842 28.3784C39.4934 27.9939 39.1129 27.6916 38.3521 27.0869L36.955 25.9767C36.4695 25.591 36.2268 25.3982 36.0748 25.1913C35.9103 24.968 35.8402 24.8227 35.7673 24.555C35.7001 24.3073 35.7001 23.9085 35.7001 23.1111C35.7001 22.3138 35.7001 21.9152 35.7673 21.6675C35.8402 21.3997 35.9103 21.2546 36.0748 21.0309C36.2268 20.8243 36.4695 20.6313 36.9548 20.2458L38.3521 19.1355C39.1131 18.5308 39.4936 18.2285 39.6844 17.8441C39.8455 17.5195 39.9116 17.1561 39.8754 16.7956C39.8324 16.3686 39.5832 15.9517 39.0844 15.1178L38.1989 13.6376C37.7264 12.8478 37.4903 12.4529 37.1534 12.2168C36.8685 12.0173 36.5352 11.8986 36.1883 11.8731C35.7779 11.8429 35.345 11.9995 34.479 12.3126L32.5255 13.0191C31.9536 13.2258 31.6677 13.3292 31.4126 13.3505C31.1618 13.3713 31.0103 13.3583 30.7669 13.295C30.519 13.2305 30.1853 13.04 29.518 12.6592C29.467 12.6301 29.4157 12.6013 29.3644 12.5729C28.6667 12.1875 28.3178 11.9948 28.1291 11.8091C27.944 11.6269 27.8527 11.4987 27.7411 11.2642C27.6275 11.0253 27.5738 10.7146 27.4666 10.0931L27.1657 8.35142Z"
+                            fill="#2B3343" />
+                        <path class="logo-toggle"
+                            d="M42.7013 21.3333H3.05012C1.92711 21.3333 1.01672 22.243 1.01672 23.3651V47.2381C1.01672 48.3602 1.92711 49.2698 3.05012 49.2698H42.7013C43.8243 49.2698 44.7347 48.3602 44.7347 47.2381V23.3651C44.7347 22.243 43.8243 21.3333 42.7013 21.3333Z"
+                            fill="#2B3343" />
+                        <path class="logo-toggle"
+                            d="M54.495 49.2698V14.7464H68.4034C70.1277 14.7464 71.7707 14.9252 73.3324 15.2828C74.9265 15.6079 76.3581 16.1768 77.6269 16.9895C78.8957 17.8022 79.888 18.9399 80.6038 20.4028C81.3521 21.8331 81.7262 23.6698 81.7262 25.9129C81.7262 27.5708 81.4497 29.0662 80.8966 30.399C80.3435 31.7318 79.5302 32.8696 78.4565 33.8123C77.3829 34.7551 76.0978 35.4865 74.6012 36.0066L82.263 49.2698H74.406L67.6714 37.1281H61.4736V49.2698H54.495ZM61.4736 30.9354H67.9154C68.924 30.9354 69.8349 30.8541 70.6483 30.6916C71.4942 30.4965 72.2099 30.2039 72.7956 29.8138C73.4137 29.4238 73.8854 28.9036 74.2108 28.2535C74.5687 27.6033 74.7476 26.8069 74.7476 25.8641C74.7801 24.6613 74.5199 23.7349 73.9668 23.0847C73.4462 22.402 72.6979 21.9307 71.7219 21.6706C70.7784 21.378 69.656 21.2318 68.3546 21.2318H61.4736V30.9354ZM98.4499 49.6112C95.7495 49.6112 93.4559 49.0748 91.5689 48.002C89.6819 46.9293 88.2341 45.4177 87.2255 43.4672C86.217 41.4842 85.7127 39.1761 85.7127 36.543C85.7127 33.8773 86.2332 31.553 87.2743 29.57C88.3154 27.5545 89.7795 25.9779 91.6665 24.8401C93.586 23.7024 95.8471 23.1335 98.4499 23.1335C100.402 23.1335 102.11 23.4585 103.574 24.1087C105.071 24.7589 106.323 25.6691 107.332 26.8394C108.373 28.0097 109.137 29.375 109.625 30.9354C110.146 32.4632 110.39 34.1211 110.357 35.9091C110.357 36.3642 110.341 36.8031 110.309 37.2257C110.276 37.6483 110.211 38.0709 110.113 38.4935H92.4961C92.5937 39.4687 92.8702 40.3627 93.3257 41.1754C93.7812 41.9881 94.4156 42.6382 95.229 43.1258C96.0749 43.581 97.116 43.8085 98.3523 43.8085C99.1656 43.8085 99.9139 43.7272 100.597 43.5647C101.28 43.3697 101.866 43.0771 102.354 42.687C102.842 42.2969 103.184 41.8418 103.379 41.3217H110.113C109.69 43.2396 108.893 44.8163 107.722 46.0516C106.583 47.2869 105.201 48.1971 103.574 48.7822C101.947 49.3349 100.239 49.6112 98.4499 49.6112ZM92.6425 33.7148H103.818C103.786 32.8371 103.558 32.0244 103.135 31.2767C102.744 30.4965 102.143 29.8789 101.329 29.4238C100.548 28.9361 99.5398 28.6923 98.3035 28.6923C97.0672 28.6923 96.0261 28.9361 95.1802 29.4238C94.3668 29.9114 93.7487 30.5453 93.3257 31.3255C92.9353 32.0731 92.7076 32.8696 92.6425 33.7148ZM125.252 49.6112C122.356 49.6112 120.209 48.7985 118.81 47.1731C117.443 45.5477 116.76 43.3209 116.76 40.4927V29.6676H112.905V23.5723H116.76V16.6481H123.592V23.5723H131.401V29.6676H123.592V39.0786C123.592 39.9238 123.69 40.6552 123.885 41.2729C124.113 41.8905 124.471 42.3782 124.959 42.7358C125.479 43.0608 126.179 43.2234 127.057 43.2234C127.838 43.2234 128.489 43.1096 129.009 42.882C129.562 42.622 130.018 42.3457 130.376 42.0531L132.523 47.3194C131.84 47.872 131.075 48.3271 130.229 48.6847C129.416 49.0098 128.586 49.2373 127.74 49.3674C126.895 49.5299 126.065 49.6112 125.252 49.6112ZM143.497 49.6112C142.326 49.6112 141.187 49.4649 140.081 49.1723C139.007 48.8472 138.048 48.3596 137.202 47.7095C136.356 47.0593 135.689 46.2466 135.201 45.2714C134.713 44.2961 134.469 43.1584 134.469 41.858C134.469 40.1026 134.827 38.7048 135.543 37.6645C136.258 36.5918 137.218 35.7791 138.422 35.2264C139.626 34.6738 141.008 34.2999 142.57 34.1049C144.164 33.9098 145.807 33.8123 147.499 33.8123H151.208C151.208 32.8696 151.029 32.0406 150.671 31.3255C150.346 30.5778 149.841 30.0089 149.158 29.6188C148.475 29.1962 147.597 28.9849 146.523 28.9849C145.84 28.9849 145.173 29.0824 144.522 29.2775C143.904 29.44 143.383 29.6838 142.96 30.0089C142.537 30.334 142.261 30.7566 142.131 31.2767H135.201C135.396 29.8464 135.852 28.6273 136.567 27.6196C137.283 26.5793 138.178 25.7341 139.251 25.0839C140.325 24.4338 141.496 23.9624 142.765 23.6698C144.067 23.3448 145.4 23.1822 146.767 23.1822C150.508 23.1822 153.274 24.255 155.063 26.4005C156.853 28.5135 157.747 31.5205 157.747 35.4215V49.2698H151.598L151.501 45.954C150.687 47.0918 149.76 47.9208 148.719 48.4409C147.71 48.961 146.734 49.2861 145.791 49.4161C144.847 49.5462 144.083 49.6112 143.497 49.6112ZM145.059 44.1986C146.198 44.1986 147.239 43.9711 148.182 43.5159C149.126 43.0608 149.874 42.4432 150.427 41.663C150.98 40.8828 151.257 40.0051 151.257 39.0298V38.3959H146.572C145.888 38.3959 145.222 38.4284 144.571 38.4935C143.953 38.5585 143.383 38.6885 142.863 38.8836C142.375 39.0461 141.984 39.3224 141.692 39.7125C141.399 40.1026 141.252 40.6227 141.252 41.2729C141.252 41.9231 141.415 42.4757 141.74 42.9308C142.098 43.3534 142.57 43.6785 143.156 43.906C143.741 44.1011 144.376 44.1986 145.059 44.1986ZM163.084 49.2698V23.5723H169.916V49.2698H163.084ZM166.5 20.9879C165.231 20.9879 164.206 20.6141 163.425 19.8664C162.645 19.0862 162.254 18.0947 162.254 16.8919C162.254 15.6241 162.661 14.6001 163.474 13.8199C164.288 13.0398 165.312 12.6497 166.549 12.6497C167.687 12.6497 168.664 13.0398 169.477 13.8199C170.323 14.5676 170.746 15.5754 170.746 16.8432C170.746 18.0785 170.339 19.0862 169.526 19.8664C168.745 20.6141 167.736 20.9879 166.5 20.9879ZM175.332 49.2698V14.7464H182.164V49.2698H175.332ZM188.507 49.2698V14.7464H203.636C205.23 14.7464 206.678 14.909 207.979 15.234C209.313 15.5266 210.468 16.0142 211.444 16.6969C212.42 17.3796 213.168 18.2898 213.689 19.4276C214.242 20.5653 214.519 22.0119 214.519 23.7674C214.519 25.1977 214.193 26.5305 213.543 27.7658C212.892 29.0012 211.932 29.9439 210.663 30.594C212.355 31.1467 213.689 32.1057 214.665 33.471C215.641 34.8038 216.129 36.5755 216.129 38.786C216.129 40.769 215.755 42.4432 215.007 43.8085C214.258 45.1413 213.234 46.2141 211.932 47.0268C210.631 47.8395 209.118 48.4246 207.394 48.7822C205.669 49.1073 203.831 49.2698 201.879 49.2698H188.507ZM195.486 42.8333H202.709C203.587 42.8333 204.4 42.7683 205.149 42.6382C205.93 42.5082 206.613 42.2969 207.198 42.0043C207.784 41.6792 208.239 41.2404 208.565 40.6878C208.923 40.1351 209.102 39.4524 209.102 38.6398C209.102 37.8921 208.955 37.2744 208.662 36.7868C208.402 36.2667 208.012 35.8441 207.491 35.519C207.003 35.1939 206.418 34.9664 205.734 34.8363C205.084 34.7063 204.352 34.6413 203.538 34.6413H195.486V42.8333ZM195.486 28.8386H201.879C202.757 28.8386 203.555 28.7573 204.27 28.5948C204.986 28.4323 205.588 28.1722 206.076 27.8146C206.564 27.457 206.938 27.0182 207.198 26.498C207.459 25.9454 207.589 25.3115 207.589 24.5963C207.621 23.6211 207.41 22.9059 206.954 22.4508C206.499 21.9632 205.881 21.6381 205.1 21.4756C204.319 21.2805 203.441 21.183 202.465 21.183H195.486V28.8386ZM232.612 49.6112C230.01 49.6112 227.732 49.0911 225.78 48.0508C223.828 46.978 222.315 45.4664 221.242 43.5159C220.168 41.533 219.631 39.1924 219.631 36.4942C219.631 33.7311 220.168 31.358 221.242 29.375C222.348 27.3595 223.877 25.8154 225.829 24.7426C227.781 23.6698 230.026 23.1335 232.563 23.1335C235.166 23.1335 237.427 23.6861 239.347 24.7914C241.266 25.8966 242.763 27.4408 243.837 29.4238C244.91 31.4067 245.447 33.7798 245.447 36.543C245.447 39.2411 244.91 41.5817 243.837 43.5647C242.796 45.5152 241.315 47.0105 239.396 48.0508C237.509 49.0911 235.248 49.6112 232.612 49.6112ZM232.515 43.3697C234.011 43.3697 235.215 43.0446 236.126 42.3944C237.037 41.7443 237.688 40.8991 238.078 39.8588C238.501 38.786 238.712 37.6645 238.712 36.4942C238.712 35.3239 238.501 34.2024 238.078 33.1297C237.688 32.0569 237.037 31.1792 236.126 30.4965C235.248 29.7813 234.044 29.4238 232.515 29.4238C231.051 29.4238 229.863 29.7813 228.952 30.4965C228.041 31.1792 227.374 32.0569 226.951 33.1297C226.561 34.2024 226.366 35.3239 226.366 36.4942C226.366 37.697 226.561 38.8185 226.951 39.8588C227.374 40.8991 228.041 41.7443 228.952 42.3944C229.863 43.0446 231.051 43.3697 232.515 43.3697ZM246.953 49.2698L255.933 36.1529L247.393 23.5723H255.347L260.423 31.6668L265.4 23.5723H273.111L264.522 36.2992L273.697 49.2698H265.742L260.13 40.834L254.566 49.2698H246.953Z"
+                            fill="#2B3343" />
+                    </svg>
+
+                </div>
+                <nav class="header__navigation">
+                    <div class="theme-toggle">
+                        <button id="theme-switcher">
+                            <span class="icon sun visible"><img src="./static/img/sun.svg" alt="" width="48px" height="48px"></span>
+                            <span class="icon moon"><img src="./static/img/moon.svg" alt="" width="48px" height="48px"></span>
+                        </button>
+                    </div>
+                    <ul class="header__ul">
+                        <li class="header__li"><a href="#aboutUs" class="header__a toggle">About Us</a></li>
+                        <li class="header__li"><a href="#services" class="header__a toggle">Services</a></li>
+                        <li class="header__li"><a href="#contacts" class="header__a toggle">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <div class="hero">
+                <div class="accent-block hero__container">
+                    <div class="hero__left">
+                        <h1 class="hero__title">Welcome to <span>Retailbox</span></h1>
+                        <h2 class="hero__subtitle">Comprehensive IT Solutions for Your Business</h2>
+                    </div>
+                    <div class="hero__right"><img src="/static/img/hero__img.png" alt="" class="hero__image"></div>
+                </div>
+            </div>
+            <div class="about-us" id="aboutUs">
+                <div class="accent-block about-us__container">
+                    <h1 class="about-us__title">About Us</h1>
+                    <p class="about-us__text">Since our establishment in 2017, retailbox has been dedicated to providing
+                        the best IT solutions for small and medium-sized businesses.</p>
+                </div>
+            </div>
+            <div class="our-motto">
+                <div class="accent-block__title-out our-motto__title toggle">Our Motto:</div>
+                <div class="accent-block our-motto__container">
+                    <div class="our-motto__text">
+                        <h2 class="accent-block__title our-motto__subtitle">"EASIER. FASTER. MORE PROFITABLE."</h2>
+                        <p class="accent-block__text our-motto__text">Our commitment to quality products, exceptional
+                            services, and incomparable customer care keeps our community coming back again and again. We
+                            never stop improving, continuously striving to exceed expectations by integrating the latest
+                            technologies and best practices to deliver unparalleled solutions tailored to your needs. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="what-we-do">
+                <div class="accent-block__title-out what-we-do__title toggle">What we do?</div>
+                <div class="accent-block">
+                    <div class="what-we-do__text">
+                        <p class="accent-block__text what-we-do__text">At Retailbox, we understand that every business
+                            is unique. That's why we offer personalized IT solutions tailored to meet your specific
+                            needs and preferences. Browse through our comprehensive range of services below to learn
+                            more about what we can do for you.</p>
+                    </div class="what-we-do__text">
+                </div>
+            </div>
+            <div class="our-services" id="services">
+                <div class="our-services__container">
+                    <div class="card our-services__card">
+                        <img src="/static/img/card__image-0.png" alt="" class="card__img">
+                        <div class="card__description">
+                            <h3 class="card__list-title">1 .Business Process Analysis</h3>
+                            <ul class="card__list">
+                                <li class="card__list-item">Studying the client's current processes.</li>
+                                <li class="card__list-item">Identifying issues and growth opportunities.</li>
+                                <li class="card__list-item">Preparing a report with optimization recommendations.</li>
+                            </ul>
+                        </div>
+                        <div class="card__afterdesc">Our team conducts a thorough analysis of your current business
+                            processes, finds and eliminates bottlenecks, opening new opportunities for your business. 
+                        </div>
+                    </div>
+                    <div class="card our-services__card">
+                        <img src="/static/img/card__image-1.png" alt="" class="card__img">
+                        <div class="card__description">
+                            <h3 class="card__list-title">2. Software Selection and Implementation</h3>
+                            <ul class="card__list">
+                                <li class="card__list-item">Searching and selecting the most suitable software </li>
+                                <li class="card__list-item">Configuring and adapting the software to specific business
+                                    requirements.</li>
+                                <li class="card__list-item">Implementing CRM and ERP systems.</li>
+                            </ul>
+                        </div>
+                        <div class="card__afterdesc">Our team of experts can help you streamline your business processes
+                            and improve your overall workflow efficiency with our project management and CRM solutions. 
+                        </div>
+                    </div>
+                    <div class="card our-services__card">
+                        <img src="/static/img/card__image-2.png" alt="" class="card__img">
+                        <div class="card__description">
+                            <h3 class="card__list-title">3. Process Automation</h3>
+                            <ul class="card__list">
+                                <li class="card__list-item">Creating automated solutions for routine tasks.</li>
+                                <li class="card__list-item">Using machine learning and AI for process automation.</li>
+                                <li class="card__list-item">Applying RPA to boost efficiency and cut costs.</li>
+                            </ul>
+                        </div>
+                        <div class="card__afterdesc">Our goal at Retailbox is to make your life easier and stress-free.
+                            That's why we offer top-quality customer service and workflow automation solutions to help
+                            you manage your business more efficiently.
+                        </div>
+                    </div>
+                    <div class="card our-services__card">
+                        <img src="/static/img/card__image-3.png" alt="" class="card__img">
+                        <div class="card__description">
+                            <h3 class="card__list-title">4. System Integration</h3>
+                            <ul class="card__list">
+                                <li class="card__list-item">Combining various software solutions into a unified IT
+                                    infrastructure.</li>
+                                <li class="card__list-item">Setting up data exchange between systems via API.</li>
+                                <li class="card__list-item">Integrating CRM and ERP systems with other tools and
+                                    services.</li>
+                            </ul>
+                        </div>
+                        <div class="card__afterdesc">Let us handle all the complexities of automation and integration,
+                            so you can focus on scaling your business and achieving your goals.
+                        </div>
+                    </div>
+                    <div class="card our-services__card">
+                        <img src="/static/img/card__image-4.png" alt="" class="card__img">
+                        <div class="card__description">
+                            <h3 class="card__list-title">5. Dashboard and Reporting Creation</h3>
+                            <ul class="card__list">
+                                <li class="card__list-item">Developing interactive dashboards for visualizing key
+                                    business metrics.</li>
+                                <li class="card__list-item">Setting up automated reporting using various tools.</li>
+                                <li class="card__list-item">Integrating data from various sources to get a comprehensive
+                                    view of the business.</li>
+                            </ul>
+                        </div>
+                        <div class="card__afterdesc">Transform Data into insights with our expert dashboard and
+                            reporting solutions, empowering you to make informed decisions and drive success.
+                        </div>
+                    </div>
+                    <div class="card our-services__card">
+                        <img src="/static/img/card__image-5.png" alt="" class="card__img">
+                        <div class="card__description">
+                            <h3 class="card__list-title">6. Web Development</h3>
+                            <ul class="card__list">
+                                <li class="card__list-item">Understanding client needs and goals.</li>
+                                <li class="card__list-item">Building user-friendly websites and web applications to
+                                    boost online presence.</li>
+                                <li class="card__list-item">Optimizing performance, security, and user experience for
+                                    better engagement and growth.</li>
+                            </ul>
+                        </div>
+                        <div class="card__afterdesc">Our team carefully evaluates your digital needs, creating tailored
+                            web solutions that improve user experience and streamline online interactions, driving new
+                            opportunities for your business growth.
+                        </div>
+                    </div>
+                    <div class="card our-services__card">
+                        <img src="/static/img/card__image-6.png" alt="" class="card__img">
+                        <div class="card__description">
+                            <h3 class="card__list-title">7. Unique Solutions Development</h3>
+                            <ul class="card__list">
+                                <li class="card__list-item">Creating products with no market analogs.</li>
+                                <li class="card__list-item">Using advanced technologies to develop innovative solutions.
+                                </li>
+                                <li class="card__list-item">Scalable Solutions: design of scalable and flexible
+                                    solutions that can grow and adapt with your business.</li>
+                            </ul>
+                        </div>
+                        <div class="card__afterdesc">Imagine having no limits and boundless imagination, and we will
+                            help bring any of your ideas to life.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="why-choose-us">
+                <h1 class="why-choose-us__title toggle">Why choose us?</h1>
+                <div class="why-choose-us__container">
+                    <div class="card-1 why-choose-us__card">
+                        <img src="/static/img/card-1__img-0.png" alt="" class="card-1__img">
+                        <h1 class="card-1__title">Expert Team</h1>
+                        <p class="card-1__text">Our team of engineers and business analysts specializes in project
+                            management, CRM, customer service, and workflow automation. We bring deep expertise to every
+                            project, ensuring high-quality results.</p>
+                    </div>
+                    <div class="card-1 why-choose-us__card">
+                        <img src="/static/img/card-1__img-1.png" alt="" class="card-1__img">
+                        <h1 class="card-1__title">Innovations</h1>
+                        <p class="card-1__text">By leveraging advanced AI technologies, we help companies optimize their
+                            processes, reduce manual labor, and improve overall efficiency, enabling businesses to stay
+                            ahead of the competition.</p>
+                    </div>
+                    <div class="card-1 why-choose-us__card">
+                        <img src="/static/img/card-1__img-2.png" alt="" class="card-1__img">
+                        <h1 class="card-1__title">Proven Results</h1>
+                        <p class="card-1__text">Our successful projects have enabled clients to save thousands of
+                            man-hours and significantly reduce operational expenses, delivering measurable improvements
+                            in productivity and cost efficiency.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews">
+                <div class="reviews__title toggle">Reviews:</div>
+                <div class="reviews__container">
+                    <div class="card-2 reviews__card">
+                        <h1 class="card-2__title">Roman Vasilchuk</h1>
+                        <p class="card-2__text">"One of the remarkable qualities that sets Michael apart is his
+                            incredible speed in completing tasks. He possesses an impressive ability to deliver
+                            high-quality work within tight deadlines, ensuring that projects are completed on time. His
+                            efficiency not only showcases his dedication and work ethic but also enables our team to
+                            stay on track and achieve our goals effectively."</p>
+                    </div>
+                    <div class="card-2 reviews__card">
+                        <h1 class="card-2__title">Glen Johnson</h1>
+                        <p class="card-2__text">"Solid team with good skills in our desired technology platforms
+                            (Monday.com, MAKE, and JotForm design). Enjoyed collaborating on this initial project as
+                            they were able to translate ideas into design and business processes in a very timely
+                            manner."</p>
+                    </div>
+                    <div class="card-2 reviews__card">
+                        <h1 class="card-2__title">Ignat Postny</h1>
+                        <p class="card-2__text">"Have Working with this team was an overall positive experience. They
+                            displayed a high level of proficiency and understanding of Zoho Creator and were able to
+                            translate our project brief into a functional web-app effectively. review you and share
+                            their testimonials here. It can do wonders for your brand image."</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="footer" id="contacts">
+        <div class="footer__container">
+            <span><img src="/static/img/logo.png" alt="" class="footer__logo"></span>
+            <div class="footer__info">
+                <div class="footer__text">
+                    <img src="/static/img/footer__icon-0.svg" alt="" class="footer__icon">
+                    <p class="footer__p" id="phone">(786) 767 6898</p>
+                    <div id="popup" class="footer__popup">Copied</div>
+                </div>
+                <div class="footer__text">
+                    <img src="/static/img/footer__icon-1.svg" alt="" class="footer__icon">
+                    <p class="footer__p" id="address">1991 Presidential Way, West Palm Beach, Florida, USA, 33401</p>
+                </div>
+                <div class="footer__text">
+                    <img src="/static/img/footer__icon-2.svg" alt="" class="footer__icon">
+                    <a href="mailto:admin@retailbox-automation.com" class="footer__p">admin@retailbox-automation.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
